@@ -7,7 +7,7 @@ export const Project = () => {
 
   return (
     <div className='projects-page'>
-      <h1 className='text-center w-full text-3xl font-bold underline'>My Projects Section</h1>
+      <h1 className='text-center w-full text-4xl font-bold text-gray-900'>My Projects Section</h1>
       <div className='w-full p-10 grid grid-cols-3 gap-x-16 gap-y-15'>
         {projectData.map((project, index) => (
           <div className='border border-gray-200 p-2 rounded-xl shadow-xl shadow-blue-200 hover:shadow-blue-300 h-80' key={index}>

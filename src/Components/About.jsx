@@ -10,7 +10,7 @@ export const About = () => {
 
   return (
     <div className='w-full p-4'>
-      <h1 className='text-4xl underline font-bold text-center p-4 text-blue-700 AboutTitle'>
+      <h1 className='text-4xl font-bold text-center p-4 text-gray-900 AboutTitle'>
         About Me
       </h1>
       <div className='w-full border-2 bg-gray-200 shadow-2xl rounded-sm p-16'>

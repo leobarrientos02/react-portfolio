@@ -83,5 +83,12 @@ body {
 }
 
 .contact {
-  height: 78vh;
+  height: 83vh;
+}
+
+.valid {
+  outline: #38d39f;
+}
+.invalid {
+  outline: red;
 }
