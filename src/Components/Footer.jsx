@@ -23,7 +23,7 @@ export const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/leo_barrientos182/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/leonel_barrientos02/" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
           </li>

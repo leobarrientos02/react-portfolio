@@ -1,5 +1,7 @@
 import Travelly from '../img/travelly.jpg';
 import Inferno from '../img/inferno.png';
+import Capture from '../img/capture.png';
+import Waves from '../img/musicApp.jpg';
 
 export const projectData = [
     {
@@ -15,7 +17,23 @@ export const projectData = [
         image: Inferno,
         link: "https://inferno-gaming.netlify.app/",
         github: 'https://github.com/leobarrientos02/React-Gaming',
-        technology: ['React', "React Router", "Framer Motion",  "Axios","Redux"],
+        technology: ['React', "React Router", "Framer Motion",  "Axios","Redux", "CSS"],
         description: "Website created using React.js and many other technologies that fetches data from an API and displays on video games.",
+    },
+    {
+        name: 'Capture',
+        image: Capture,
+        link: "https://wizardly-kepler-b13330.netlify.app/",
+        github: 'https://github.com/leobarrientos02/capture',
+        technology: ['React', "React Router", "Framer Motion", "SASS", "JavaScript"],
+        description: "UX/UI design for a movie review site, using React and Framer Motion.",
+    },
+    {
+        name: 'Waves X',
+        image: Waves,
+        link: "https://music-x-waves.netlify.app/",
+        github: 'https://github.com/leobarrientos02/react-music',
+        technology: ['React', "SASS", "JavaScript"],
+        description: "Music App using React to allow users to listen to relaxing free music.",
     }
 ];
