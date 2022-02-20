@@ -1,6 +1,6 @@
 import React from 'react'
 import Splash from '../img/splash.svg';
-import { FaHtml5, FaReact, FaSass, FaGithub, FaJava, FaPython, FaPhp, FaGit, FaFigma, FaNodeJs, FaCode, FaCss3Alt } from 'react-icons/fa';
+import { FaHtml5, FaReact, FaSass, FaGithub, FaJava, FaPython, FaPhp, FaFigma, FaNodeJs, FaCode, FaCss3Alt } from 'react-icons/fa';
 import { DiJsBadge, DiJava, DiGit } from "react-icons/di";
 
 export const Home = () => {
