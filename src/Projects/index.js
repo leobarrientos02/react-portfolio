@@ -3,6 +3,8 @@ import Inferno from '../img/inferno.png';
 import Capture from '../img/capture.png';
 import Waves from '../img/musicApp.jpg';
 import Iphone from '../img/iPhone13Page.png';
+import Moda from '../img/FashionPage.png';
+import Photon from '../img/photon.jpg';
 
 export const projectData = [
     {
@@ -44,6 +46,22 @@ export const projectData = [
         github: 'https://github.com/leobarrientos02/UltimateAnimationPage',
         technology: ['HTML', "SASS", "JavaScript", "GSAP"],
         description: "Making a website that uses many transitions such as page transitions, scroll triggers, & more.",
+    },
+    {
+        name: 'Moda',
+        image: Moda,
+        link: "https://cool-fashion-webdesign.netlify.app/",
+        github: 'https://github.com/leobarrientos02/FashionSiteDesign',
+        technology: ['HTML', "SASS", "JavaScript", "GSAP", "Barba"],
+        description: "Fashion Site UX/UI that uses barba and gsap for awesome page transitions.",
+    },
+    {
+        name: 'Photon',
+        image: Photon,
+        link: "https://photographer-work.netlify.app/",
+        github: 'https://github.com/leobarrientos02/Photon',
+        technology: ['HTML', "CSS", "JavaScript"],
+        description: "Photon allows users to search the Pexel API for any images they want.",
     },
 
 ];
