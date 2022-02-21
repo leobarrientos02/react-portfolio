@@ -6,13 +6,13 @@ import { NavLink } from 'react-router-dom';
 export const Header = () => {
 
     return (
-    <div className='flex flex-wrap w-2/4 p-3 items-center justify-between border-t border-gray-200'>
+    <div className='header flex flex-wrap flex-row w-2/3 p-3 items-center border-t border-gray-200'>
         <Link to="/" className='flex items-center text-2xl w-1/4'>
-            <div className='flex flex-row items-center'>
-                <FaCode className='bg-gray-200 mx-1 rounded-full shadow-lg shadow-blue-300 text-blue-800' /><span className='font-bold'>Portfolio</span>
+            <div className='logo-div flex flex-row items-center'>
+                <FaCode className=' Logo bg-gray-200 mx-1 rounded-full shadow-lg shadow-blue-300 text-blue-800' /><span className='font-bold'>Portfolio</span>
             </div>
         </Link>
-        <ul className='flex flex-row justify-around items-center w-3/4 text-2xl'>
+        <ul className='header-links flex flex-row justify-around items-center w-3/4 text-2xl'>
             <li className='cursor-pointer hover:underline' id='project'>
                 <NavLink to='/projects'>
                     Projects

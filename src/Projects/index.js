@@ -2,6 +2,7 @@ import Travelly from '../img/travelly.jpg';
 import Inferno from '../img/inferno.png';
 import Capture from '../img/capture.png';
 import Waves from '../img/musicApp.jpg';
+import Iphone from '../img/iPhone13Page.png';
 
 export const projectData = [
     {
@@ -35,5 +36,14 @@ export const projectData = [
         github: 'https://github.com/leobarrientos02/react-music',
         technology: ['React', "SASS", "JavaScript"],
         description: "Music App using React to allow users to listen to relaxing free music.",
-    }
+    },
+    {
+        name: 'iPhone13 Replica',
+        image: Iphone,
+        link: "https://iphone13-replica.netlify.app/",
+        github: 'https://github.com/leobarrientos02/UltimateAnimationPage',
+        technology: ['HTML', "SASS", "JavaScript", "GSAP"],
+        description: "Making a website that uses many transitions such as page transitions, scroll triggers, & more.",
+    },
+
 ];

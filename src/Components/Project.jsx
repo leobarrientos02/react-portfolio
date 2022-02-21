@@ -1,16 +1,27 @@
-import React, { useState} from 'react'
+import React from 'react';
 import { FaGithubSquare} from 'react-icons/fa';
 import {projectData} from '../Projects/index';
-
+import { motion } from 'framer-motion';
 
 export const Project = () => {
-
+  
+  const fadeIn = {
+    hidden:{
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+      },
+    }
+  };
   return (
     <div className='projects-page'>
       <h1 className='text-center w-full text-4xl font-bold text-gray-900'>My Projects Section</h1>
       <div className='project-section w-full p-10'>
         {projectData.map((project, index) => (
-          <div className='project border border-gray-200 p-2 rounded-xl shadow-xl shadow-blue-200 hover:shadow-blue-300 h-80' key={index}>
+          <motion.div  variants={ fadeIn } initial='hidden' animate='show' className='project border border-gray-200 p-2 rounded-xl shadow-xl shadow-blue-200 hover:shadow-blue-300 h-80' key={index}>
             <a href={project.link} title={project.link} target="_blank" rel="noreferrer">
               <img src={project.image} alt={project.name} className='object-cover h-1/2 w-full rounded-xl rounded-b-none'/>
               <h2 className='text-2xl p-2 font-bold text-center'>{project.name}</h2>
@@ -25,7 +36,7 @@ export const Project = () => {
                 </a>
               </div>
             </div>  
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

@@ -1,17 +1,49 @@
 import React from 'react'
 import Splash from '../img/splash.svg';
-import { FaHtml5, FaReact, FaSass, FaGithub, FaJava, FaPython, FaPhp, FaFigma, FaNodeJs, FaCode, FaCss3Alt } from 'react-icons/fa';
+import { FaHtml5, FaReact, FaSass, FaGithub, FaPython, FaPhp, FaFigma, FaNodeJs, FaCss3Alt } from 'react-icons/fa';
 import { DiJsBadge, DiJava, DiGit } from "react-icons/di";
+import { motion } from 'framer-motion';
+
 
 export const Home = () => {
+  const codeCircle = {
+    hidden : {
+      x: "-100%",
+      '--rotate': '0deg',
+    },
+    show : {
+      x: 0,
+      '--rotate': '360deg',
+      transition: {
+        duration: 2,
+      }
+    }
+  };
+  const nameReveal = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+      }
+    }
+  };
+
   return (
     <div className="Home w-full pt-8 flex flex-row">
       <img src={Splash} alt="Splash" className='splash' />
-      <div className="w-1/2 h-full flex flex-col items-center">
-        <h2 className='home-intro-title'>Leonel E. Barrientos</h2>
-        <p className="text-gray-800 text-4xl">Full Stack Developer</p>
-        <p className="text-gray-600 text-2xl text-center">Skills in using popular technologies used to create amazing apps.</p>
-        <div className='flex flex-wrap flex-row justify-around w-3/4 text-4xl'>
+      <div className="homeText w-1/2 h-full flex flex-col items-center">
+        <motion.h2 
+          className='home-intro-title'
+          variants={ nameReveal } initial='hidden' animate='show'
+        >
+          Leonel E. Barrientos
+        </motion.h2>
+        <p className="home-subtitile text-gray-800 text-4xl">Full Stack Developer</p>
+        <p className="home-subtitile text-gray-600 text-2xl text-center">Skills in using popular technologies used to create amazing apps.</p>
+        <motion.div variants={ codeCircle } initial='hidden' animate='show' className='CodeCircles flex flex-wrap flex-row justify-around w-3/4 text-4xl'>
               <FaHtml5 className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-orange-200 text-6xl text-orange-600" />
               <FaCss3Alt className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-200 text-6xl text-blue-600"/>
               <FaReact className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-700" />
@@ -24,11 +56,11 @@ export const Home = () => {
               <FaFigma className="bg-gray-200 p-4 m-2  rounded-full shadow-lg shadow-red-300 text-6xl text-red-500"/>
               <FaNodeJs className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-green-300 text-6xl text-green-800"/>
               <DiJsBadge className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-yellow-300 text-6xl text-yellow-400" />
-        </div>
+        </motion.div>
       </div>
       <div className="w-1/2 flex items-center justify-center">
         <svg
-          className="w-3/4"
+          className="w-3/4 svgMan"
           width="799"
           height="690"
           viewBox="0 0 799 690"
