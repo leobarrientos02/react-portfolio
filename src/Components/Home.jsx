@@ -9,13 +9,11 @@ export const Home = () => {
   const codeCircle = {
     hidden : {
       x: "-100%",
-      '--rotate': '0deg',
     },
     show : {
       x: 0,
-      '--rotate': '360deg',
       transition: {
-        duration: 2,
+        duration: 1,
       }
     }
   };

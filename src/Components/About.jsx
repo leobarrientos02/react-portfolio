@@ -5,7 +5,7 @@ import Ginger from '../img/ginger.jpeg';
 import Jasper from '../img/jasper.JPG';
 import Jullian from '../img/jullian.JPG';
 import Watson from '../img/watson.JPG';
-
+import Software from '../img/AboutSoftware.png';
 
 import {AnimationOnScroll} from 'react-animation-on-scroll';
 
@@ -14,23 +14,21 @@ import { FaUserGraduate, FaUserTie, FaUserAstronaut  } from 'react-icons/fa';
 export const About = () => {
   return (
     <div className='w-full flex flex-col bg-white'>
-      <AnimationOnScroll offset={0} animateIn="animate__rubberBand" >
+      <AnimationOnScroll offset={0} animatePreScroll={true} animateIn="animate__jello" >
         <h2 className="text-gray-900 text-4xl w-full text-center font-bold py-3">Get to Know Me</h2>
       </AnimationOnScroll>
 
       {/* ABOUT ME INTRO START */}
-      <div
-        className="About-Intro flex flex-row items-center justify-between rounded-md p-4"
-      >
+      <div className="About-Intro flex flex-row items-center justify-between rounded-md p-4">
         <div className="flex items-center justify-center w-2/4">
             <img src={Me} alt="Leo" className="object-cover w-72 rounded-md shadow-lg shadow-blue-200" />
         </div>
         <div className='flex w-2/4 flex-col p-4'>
           <h1 className="text-4xl font-bold text-blue-900 py-2">Leonel E. Barrientos</h1>
 
-          <AnimationOnScroll initiallyVisible={true} animateOut='animate__bounceOutRight' animateIn='animate__bounceInRight'>
+          <AnimationOnScroll initiallyVisible={true}  animateIn='animate__bounceInRight' animateOnce={true}>
           <div>
-              <h2 className="text-2xl font-semibold text-gray-900 flex flex-row items-center">Personal Information<FaUserAstronaut /></h2>
+            <h2 className="text-2xl font-semibold text-gray-900 flex flex-row items-center">Personal Information<FaUserAstronaut /></h2>
             <p className='text-lg'>Birth Date: 12/18/1997</p>
             <p className=' text-lg'>Born in Queens, New York</p>
             <p className='text-lg'>Lives in Long Beach, New York</p>          
@@ -54,8 +52,18 @@ export const About = () => {
       {/* ABOUT ME INTRO END */}
 
       {/*  Software Developer */}
-      <div className='About-Section flex flex-row items-center justify-between rounded-md p-4'>
-
+      <div className='About-Section flex flex-col rounded-md p-4 bg-blue-100'>
+        <AnimationOnScroll animateIn='animate__fadeInLeftBig'>
+          <h1 className="text-5xl font-bold w-full text-left p-2">Why I love Software Development?</h1>
+        </AnimationOnScroll>
+        <div className='flex flex-row p-4'>
+          <AnimationOnScroll animateIn='animate__backInUp' className='flex flex-col w-1/2'>
+            <p className=" indent-8 text-gray-900 text-lg font-medium leading-loose">My interest in Software Development started when i first started college where i initially wanted to pursue a career as a Network Engineer. One of my favorite courses in Nassau Community College was Intro to Web Development, where i learned the basics such as HTML and CSS. Once i completed the course i realized that i had a deep interest in web Development and began doing my own research. I started developing many websites which lead to me learning more technologies that are used in software developing such as Java, Php, Python, React, and more. As a way to learn many technologies i started developing more complex projects, which many are displayed in the projects section of the site. I have learned a lot through my own research, Udemy, youtube, and college.</p>
+          </AnimationOnScroll>
+          <AnimationOnScroll className='flex items-start justify-center w-1/2 h-full'animateIn='animate__bounceInRight' animateOut='animate__zoomOutLeft'>
+              <img src={Software} alt="Coding" className="h-3/4"/>
+          </AnimationOnScroll>       
+          </div>
       </div>
        {/*  Software Developer Ends*/}
 
@@ -66,39 +74,41 @@ export const About = () => {
       {/*  Fitness Ends*/}
       
       {/*  Pets */}
-      <div className='About-Section flex flex-row items-center justify-between rounded-md bg-red-600'>
-        <div className='flex flex-col items-start w-1/2'>
-          <AnimationOnScroll animateIn='animate__bounceInLeft' animateOut='animate__zoomOut'>>
-              <h2 className="text-5xl font-bold p-7 bg-white w-full">My Loving Pets &#10084;</h2>
+      <div className='About-Section flex flex-row items-center  rounded-md bg-blue-100'>
+        <div className='flex flex-col items-start justify-center w-1/2 h-full'>
+          <AnimationOnScroll animateIn='animate__bounceInLeft' animateOut='animate__zoomOut'>
+              <h2 className="text-6xl font-bold p-7 bg-white w-full">My Loving Pets &#10084;</h2>
           </AnimationOnScroll>
         </div>
         <div className='PetsGrid w-1/2'>
           
-            <div className='flex flex-col items-center justify-center'>
+            
               <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
-                <h2 className="text-5xl font-bold text-white p-4">Jasper</h2>
-                <img src={Jasper} alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white" /> 
+                <div className='flex flex-col items-center justify-center'>
+                  <h2 className="text-5xl font-bold text-gray-800 p-4">Jasper</h2>
+                  <img src={Jasper} alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-xl shadow-orange-300" /> 
+                </div>
               </AnimationOnScroll>
-            </div>
-            <div className='flex flex-col items-center justify-center'>
-              <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
-                <h2 className="text-5xl font-bold text-white p-4">Ginger</h2>
-                <img src={Ginger} alt="Ginger" className="rounded-full w-40 h-40 object-cover border-2 border-white" /> 
-              </AnimationOnScroll>
-            </div>
 
-          <div className='flex flex-col items-center justify-center'>
-            <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
-              <h2 className="text-5xl font-bold text-white p-4">Jullian</h2>
-              <img src={Jullian} alt="Jullian" className="rounded-full w-40 h-40 object-cover border-2 border-white" /> 
+              <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
+                <div className='flex flex-col items-center justify-center'>
+                  <h2 className="text-5xl font-bold text-gray-800 p-4">Ginger</h2>
+                  <img src={Ginger} alt="Ginger" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-purple-300" /> 
+                </div>
             </AnimationOnScroll>
-          </div>
-          <div className='flex flex-col items-center justify-center'>
             <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
-              <h2 className="text-5xl font-bold text-white p-4">Watson</h2>
-              <img src={Watson} alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white" />
+              <div className='flex flex-col items-center justify-center'>
+                <h2 className="text-5xl font-bold text-gray-800 p-4">Jullian</h2>
+                <img src={Jullian} alt="Jullian" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-gray-400" />  
+              </div>
             </AnimationOnScroll>
-          </div>
+
+            <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
+              <div className='flex flex-col items-center justify-center'>
+                  <h2 className="text-5xl font-bold text-gray-800 p-4">Watson</h2>
+                  <img src={Watson} alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-gray-500" />
+              </div>
+          </AnimationOnScroll>
         </div>
       </div>
        {/*  Pets Ends*/}    
