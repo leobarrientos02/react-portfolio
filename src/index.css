@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   margin: 0;
   padding: 0;
@@ -114,8 +113,14 @@ body {
 .About-Intro {
   height: 80vh;
 }
-.About-Section2 {
+.About-Section {
   height: 90vh;
+}
+
+.PetsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 @media screen and (max-width: 754px) {

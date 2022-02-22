@@ -3,6 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import './index.css';
 import App from './App.js';
+import 'animate.css';
+
 
 reactDom.render(
     <Router>
