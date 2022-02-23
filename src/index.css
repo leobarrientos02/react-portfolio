@@ -110,38 +110,6 @@ body {
   width: 100%;
 }
 
-.techlist {
-  position: absolute;
-  font-size: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #38a4d3;
-  border-bottom-right-radius: 100%;
-  height: 4rem;
-  width: 4rem;
-  cursor: pointer;
-  color: transparent;
-  transition: 0.5s ease-in;
-}
-
-.techlist:hover {
-  width: 16rem;
-  height: 16rem;
-  color: white;
-  background-color: #38d39f;
-  transition: 1s ease-in;
-}
-
-.open {
-  width: 16rem;
-  height: 16rem;
-  color: white;
-  background-color: #38d39f;
-  transition: 1s ease-in;
-}
-
 /* About */
 .About-Intro {
   height: 85vh;
