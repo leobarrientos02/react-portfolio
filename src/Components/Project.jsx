@@ -23,6 +23,15 @@ export const Project = () => {
       <div className='project-section w-full p-10'>
         {projectData.map((project, index) => (
           <motion.div variants={ fadeIn } initial='hidden' animate='show' className='project border border-gray-200 p-2 rounded-xl shadow-xl shadow-blue-200 hover:shadow-blue-300 h-80' key={index}>
+            <ul className='techlist' onClick={()=>{
+                  var element = document.querySelector('.techlist');
+                  element.classList.toggle("open");
+            }}>
+              <li className="font-medium underline px-4">Tech</li>
+              {project?.technology.map((tech)=> (
+                <li className='tech cursor-none'>{tech}</li>
+              ))}
+            </ul>
             <a href={project.link} title={project.link} target="_blank" rel="noreferrer">
               <img src={project.image} alt={project.name} className='object-cover h-1/2 w-full rounded-xl rounded-b-none'/>
               <h2 className='text-2xl p-2 font-bold text-center'>{project.name}</h2>
