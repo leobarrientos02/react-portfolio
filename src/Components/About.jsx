@@ -53,15 +53,15 @@ export const About = () => {
       {/* ABOUT ME INTRO END */}
 
       {/*  Software Developer */}
-      <div className='About-Section flex flex-col rounded-md p-4 bg-blue-100'>
+      <div className='About-Software flex flex-col rounded-md p-4 bg-blue-100'>
         <AnimationOnScroll animateIn='animate__fadeInLeftBig'>
           <h1 className="text-5xl font-bold w-full text-left p-2">Why I love Software Development?</h1>
         </AnimationOnScroll>
-        <div className='flex flex-row p-4'>
-          <AnimationOnScroll animateIn='animate__backInUp' className='flex flex-col w-1/2'>
+        <div className='About-Software-Content flex flex-row p-4'>
+          <AnimationOnScroll animateIn='animate__backInUp' className='Software-Text flex flex-col w-1/2'>
             <p className=" indent-8 text-gray-900 text-lg font-medium leading-loose">My interest in Software Development started when i first started college where i initially wanted to pursue a career as a Network Engineer. One of my favorite courses in Nassau Community College was Intro to Web Development, where i learned the basics such as HTML and CSS. Once i completed the course i realized that i had a deep interest in web Development and began doing my own research. I started developing many websites which lead to me learning more technologies that are used in software developing such as Java, Php, Python, React, and more. As a way to learn many technologies i started developing more complex projects, which many are displayed in the projects section of the site. I have learned a lot through my own research, Udemy, youtube, and college.</p>
           </AnimationOnScroll>
-          <AnimationOnScroll className='flex items-start justify-center w-1/2 h-full'animateIn='animate__bounceInRight' animateOut='animate__zoomOutLeft'>
+          <AnimationOnScroll className='Software-Image flex items-start justify-center w-1/2 h-full'animateIn='animate__bounceInRight' animateOut='animate__zoomOutLeft'>
               <img src={Software} alt="Coding" className="h-3/4"/>
           </AnimationOnScroll>       
           </div>

@@ -114,6 +114,9 @@ body {
 .About-Section {
   height: 100vh;
 }
+.About-Software {
+  height: 100vh;
+}
 .PetsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -144,6 +147,28 @@ body {
   }
   .About-Intro-Detail {
     padding: 1rem 0rem;
+  }
+
+  .About-Software {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .About-Software h1 {
+    font-size: 3rem;
+  }
+  .About-Software-Content {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .Software-Text {
+    width: 100%;
+  }
+  .Software-Image {
+    width: 100%;
   }
 }
 
