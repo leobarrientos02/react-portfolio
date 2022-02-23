@@ -5,7 +5,7 @@ import Waves from '../img/musicApp.jpg';
 import Iphone from '../img/iPhone13Page.png';
 import Moda from '../img/FashionPage.png';
 import Photon from '../img/photon.jpg';
-
+import Elena from '../img/elena-joy.jpg';
 export const projectData = [
     {
         name: 'Travelly',
@@ -20,7 +20,7 @@ export const projectData = [
         image: Inferno,
         link: "https://inferno-gaming.netlify.app/",
         github: 'https://github.com/leobarrientos02/React-Gaming',
-        technology: ['React', "React Router", "Framer Motion",  "Axios","Redux", "CSS"],
+        technology: ['React', "React Router", "Axios","Redux"],
         description: "Website created using React.js and many other technologies that fetches data from an API and displays on video games.",
     },
     {
@@ -28,7 +28,7 @@ export const projectData = [
         image: Capture,
         link: "https://wizardly-kepler-b13330.netlify.app/",
         github: 'https://github.com/leobarrientos02/capture',
-        technology: ['React', "React Router", "Framer Motion", "SASS", "JavaScript"],
+        technology: ['React', "React Router", "SASS", "JavaScript"],
         description: "UX/UI design for a movie review site, using React and Framer Motion.",
     },
     {
@@ -62,6 +62,14 @@ export const projectData = [
         github: 'https://github.com/leobarrientos02/Photon',
         technology: ['HTML', "CSS", "JavaScript"],
         description: "Photon allows users to search the Pexel API for any images they want.",
+    },
+    {
+        name: 'Elena Gallery',
+        image: Elena,
+        // link: "https://focused-archimedes-c341c5.netlify.app/",
+        github: 'https://github.com/leobarrientos02/Photography_Site',
+        technology: ['HTML', "CSS", "JavaScript"],
+        description: "Beautiful UX/UI design for professional photographers wanting to display their work online.",
     },
 
 ];
