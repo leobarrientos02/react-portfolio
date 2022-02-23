@@ -7,28 +7,22 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 .projects-page {
   background-color: #edf2f8;
 }
 
-body {
-  overflow-x: hidden;
-}
-.Home {
-  overflow: hidden;
-  max-height: 77vh;
-}
-.splash {
-  position: absolute;
-  z-index: -1;
-  max-height: 98%;
-  top: 0%;
-  right: 0%;
-}
 .footer {
   background-color: #154353;
 }
 
+/* HOME PAGE */
+.Home {
+  overflow: hidden;
+  max-height: 77vh;
+}
 .home-intro-title {
   font-size: 4rem;
   padding: 1rem 0rem;
@@ -39,7 +33,13 @@ body {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-
+.splash {
+  position: absolute;
+  z-index: -1;
+  max-height: 98%;
+  top: 0%;
+  right: 0%;
+}
 #plant-left {
   animation: plant 1.5s ease infinite alternate;
 }
@@ -80,6 +80,8 @@ body {
     transform: rotateZ(360deg);
   }
 }
+/* Home Page ENDS */
+
 .active {
   background: #2c2c2c;
   color: white;
@@ -87,17 +89,12 @@ body {
   border-radius: 1.5rem;
 }
 
+/* CONTACT PAGE */
 .contact {
   height: 83vh;
 }
 
-.valid {
-  outline: #38d39f;
-}
-.invalid {
-  outline: red;
-}
-
+/* PROJECTS PAGE */
 .project-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
@@ -117,13 +114,42 @@ body {
 .About-Section {
   height: 100vh;
 }
-
 .PetsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+@media screen and (max-width: 754px) {
+  .About {
+    padding-top: 2rem;
+  }
+  .About-Intro {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .Img-Container {
+    width: 100%;
+    height: 30vh;
+  }
+  .Img-Container img {
+    width: 50%;
+  }
+  .Intro-Text-Container {
+    width: 100%;
+  }
+  .Intro-Text-Container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .About-Intro-Detail {
+    padding: 1rem 0rem;
+  }
+}
 
+/* ABOUT ENDS */
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 754px) {
   .header {
     display: flex;

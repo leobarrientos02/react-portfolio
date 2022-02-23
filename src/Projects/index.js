@@ -11,15 +11,28 @@ import Culture from '../img/culture.jpg';
 import Beats from '../img/beats_maker.jpg';
 import Todo from '../img/todo.jpg';
 import Calc from '../img/calculator.jpg';
+import TravelAdvisor from '../img/TravelAdvisor.png';
+import Cryptoverse from '../img/Cryptoverse.png';
+import GoogLeo from '../img/GoogLeo.png';
+import RealEstate from '../img/RealEstate.png';
+
 
 export const projectData = [
     {
-        name: 'Travelly',
-        image: Travelly,
-        link: "https://adoring-bell-b485f5.netlify.app/",
-        github: 'https://github.com/leobarrientos02/Travelly',
-        technology: ["HTML", "CSS", "JavaScript"],
-        description: "Website design for a travel agency, to help attract customers to book vacation plans with the company.",
+        name: 'Travel Adivisor',
+        image: TravelAdvisor,
+        link: "https://traveladvisorlb.netlify.app/",
+        github: 'https://github.com/leobarrientos02/travel_advisor',
+        technology: ["React", "React-Router", "API", "Axios"],
+        description: "Travel Adisor uses Google Maps Api which helps people locate hotels and restaurants in their area. ",
+    },
+    {
+        name: 'Real Estate App',
+        image: RealEstate,
+        link: "https://react-real-estate-lyart.vercel.app/",
+        github: 'https://github.com/leobarrientos02/react-real-estate',
+        technology: ["React", "Axios", "Next.js", "Framer-Motion", "ChakraUI"],
+        description: "Real Estate App that uses an API to get data on real-estate found in Dubai, app provides many ways to filter through the API.",
     },
     {
         name: 'Inferno Gaming',
@@ -28,6 +41,30 @@ export const projectData = [
         github: 'https://github.com/leobarrientos02/React-Gaming',
         technology: ['React', "React Router", "Axios","Redux"],
         description: "Website created using React.js and many other technologies that fetches data from an API and displays on video games.",
+    },
+    {
+        name: 'Cryptoverse',
+        image: Cryptoverse,
+        link: "https://cryptocurrencyworldapp.netlify.app/",
+        github: 'https://github.com/leobarrientos02/cryptoapp',
+        technology: ['React', "React Router", "Axios","Redux", "API"],
+        description: "Crypto App was developed using multiple API's from RapidAPI.com, the app displays information on many crypto coins and news related to crypto.",
+    },
+    {
+        name: 'GoogLeo',
+        image: GoogLeo,
+        link: "https://googleo.netlify.app/search",
+        github: 'https://github.com/leobarrientos02/googleo',
+        technology: ["React", "API", "Tailwind.css", "Axios"],
+        description: "GoogLeo is a google Replica using their own API, the app allows users to search for images, news, videos, and more.",
+    },
+    {
+        name: 'Travelly',
+        image: Travelly,
+        link: "https://adoring-bell-b485f5.netlify.app/",
+        github: 'https://github.com/leobarrientos02/Travelly',
+        technology: ["HTML", "CSS", "JavaScript"],
+        description: "Website design for a travel agency, to help attract customers to book vacation plans with the company.",
     },
     {
         name: 'Capture',

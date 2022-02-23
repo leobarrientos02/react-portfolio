@@ -40,6 +40,10 @@ export const Project = () => {
           </motion.div>
         ))}
       </div>
+      <div className="w-full flex items-center justify-center">
+        <span className="checkGithub text-gray-600">Check out more projects on my <a className="text-blue-800 hover:underline" href="https://github.com/leobarrientos02/" target="_blank" rel="noreferrer">Github</a></span>
+      </div>
+      
     </div>
   )
 }
