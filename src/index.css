@@ -111,11 +111,14 @@ body {
 .About-Intro {
   height: 85vh;
 }
-.About-Section {
+.About-Pets {
   height: 100vh;
 }
 .About-Software {
   height: 100vh;
+}
+.About-Gym {
+  height: 105vh;
 }
 .PetsGrid {
   display: grid;
@@ -149,6 +152,7 @@ body {
     padding: 1rem 0rem;
   }
 
+  /* SOFTWARE SECTION */
   .About-Software {
     height: fit-content;
     display: flex;
@@ -168,6 +172,41 @@ body {
     width: 100%;
   }
   .Software-Image {
+    width: 100%;
+  }
+
+  /* FITNESS SECTION */
+  .About-Gym {
+    height: fit-content;
+  }
+  .About-Gym-Content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .About-Gym-Image {
+    width: 100%;
+    padding: 2rem;
+  }
+  .About-Gym-Image ul {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .About-Gym-Text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* PETS */
+  .About-Pets {
+    height: fit-content;
+    flex-direction: column;
+    padding: 2rem 0rem;
+  }
+  .About-Pets-Section1 {
+    width: 100%;
+  }
+  .About-Pets-Section2 {
     width: 100%;
   }
 }

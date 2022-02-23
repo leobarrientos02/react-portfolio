@@ -72,8 +72,8 @@ export const About = () => {
       <div className='About-Gym flex flex-col rounded-md p-4'>
         <h1 className="w-full text-left text-5xl font-bold p-2 text-blue-800">Health & Fitness</h1>
    
-        <div className="flex flex-row items-center justify-between">
-          <AnimationOnScroll animateIn='animate__fadeInLeft' className="flex w-1/2 flex-col p-8">
+        <div className="About-Gym-Content flex flex-row items-center justify-between">
+          <AnimationOnScroll animateIn='animate__fadeInLeft' className="About-Gym-Image flex w-1/2 flex-col p-8">
             <img src={Squat} alt="Squat" />
             <h1 className="font-semibold text-xl">My Personal Records</h1>
           <span className="text-gray-600 text-xs">Click on the numbers to view the lift.</span>
@@ -98,8 +98,8 @@ export const About = () => {
             </li>
           </ul>
           </AnimationOnScroll>
-          <div className="flex w-1/2 p-2">
-            <AnimationOnScroll animateIn='animate__flipInY' className=" indent-8 text-gray-900 text-lg font-medium leading-loose">One of my favorite hobbies is Powerlifing or "Picks things up & Put them Down". My fitness journey started a long time ago when i was in high school, where i had to hit the gym due to my obesity my entire childhood.
+          <div className="About-Gym-Text flex w-1/2 p-2">
+            <AnimationOnScroll animateIn='animate__flipInY' className="indent-8 text-gray-900 text-lg font-medium leading-loose">One of my favorite hobbies is Powerlifing or "Picks things up & Put them Down". My fitness journey started a long time ago when i was in high school, where i had to hit the gym due to my obesity my entire childhood.
                 When i was 16 years old, i was diagnosed with pre-diabetic due my obsesity where i was weighing over 250 pounds.
                 I recall the fear in my mother eyes which made me cry due to the fear. I started trying to lose weight on my own with a lot of cardio and bad dieting for which i was not eating at all.
                 I can say it worked for which i loss over 100 pounds by the time i graduated high school but i still was living an unhealthy lifestyle due not eating at all.
@@ -112,15 +112,14 @@ export const About = () => {
       {/*  Fitness Ends*/}
       
       {/*  Pets */}
-      <div className='About-Section flex flex-row items-center  rounded-md bg-blue-100'>
-        <div className='flex flex-col items-start justify-center w-1/2 h-full'>
+      <div className='About-Pets flex flex-row items-center rounded-md bg-blue-100'>
+        <div className='About-Pets-Section1 flex flex-col items-start justify-center w-1/2 h-full'>
           <AnimationOnScroll animateIn='animate__bounceInLeft' animateOut='animate__zoomOut'>
               <h2 className="text-6xl font-bold p-7 bg-white w-full">My Loving Pets &#10084;</h2>
           </AnimationOnScroll>
         </div>
-        <div className='PetsGrid w-1/2'>
+        <div className='About-Pets-Section2 PetsGrid w-1/2'>
           
-            
               <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
                 <div className='flex flex-col items-center justify-center'>
                   <h2 className="text-5xl font-bold text-gray-800 p-4">Jasper</h2>
