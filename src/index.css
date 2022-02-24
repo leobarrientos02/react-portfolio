@@ -286,7 +286,18 @@ body {
     text-align: center;
     font-size: 5rem;
   }
-
+  /* PROJECTS PAGE */
+  .project-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .project {
+    flex: 1 1 22rem;
+    margin: 1rem 0rem;
+    width: 100%;
+  }
   /*Projects Page */
   .projects-page {
     padding-top: 3rem;
