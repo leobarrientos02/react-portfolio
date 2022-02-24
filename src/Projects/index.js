@@ -24,7 +24,7 @@ export const projectData = [
         link: "https://traveladvisorlb.netlify.app/",
         github: 'https://github.com/leobarrientos02/travel_advisor',
         technology: ["React", "React-Router", "API", "Axios"],
-        description: "Travel Adisor uses Google Maps Api which helps people locate hotels and restaurants in their area. ",
+        description: "Travel Advisor uses Google Maps Api which helps people locate hotels, attractions and restaurants and weather in their area or where ever they want. ",
         tech: "React",
     },
     {

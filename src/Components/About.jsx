@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Me from '../img/about1.jpg';
 import Ginger from '../img/ginger.jpeg';
 import Jasper from '../img/jasper.JPG';
@@ -22,7 +21,7 @@ export const About = () => {
       {/* ABOUT ME INTRO START */}
       <div className="About-Intro flex flex-row items-center justify-between rounded-md p-4">
         <div className="Img-Container flex items-center justify-center w-2/4">
-            <img src={Me} alt="Leo" className="object-cover w-72 rounded-md shadow-lg shadow-blue-200" />
+            <img src={Me} alt="Leo" loading="lazy" className="object-cover w-72 rounded-md shadow-lg shadow-blue-200" />
         </div>
         <div className='Intro-Text-Container flex w-2/4 flex-col p-4'>
           <h1 className="text-4xl font-bold text-blue-900 py-2">Leonel E. Barrientos</h1>
@@ -62,7 +61,7 @@ export const About = () => {
             <p className=" indent-8 text-gray-900 text-lg font-medium leading-loose">My interest in Software Development started when i first started college where i initially wanted to pursue a career as a Network Engineer. One of my favorite courses in Nassau Community College was Intro to Web Development, where i learned the basics such as HTML and CSS. Once i completed the course i realized that i had a deep interest in web Development and began doing my own research. I started developing many websites which lead to me learning more technologies that are used in software developing such as Java, Php, Python, React, and more. As a way to learn many technologies i started developing more complex projects, which many are displayed in the projects section of the site. I have learned a lot through my own research, Udemy, youtube, and college.</p>
           </AnimationOnScroll>
           <AnimationOnScroll className='Software-Image flex items-start justify-center w-1/2 h-full'animateIn='animate__bounceInRight' animateOut='animate__zoomOutLeft'>
-              <img src={Software} alt="Coding" className="h-3/4"/>
+              <img src={Software} loading="lazy" alt="Coding" className="h-3/4"/>
           </AnimationOnScroll>       
           </div>
       </div>
@@ -74,7 +73,7 @@ export const About = () => {
    
         <div className="About-Gym-Content flex flex-row items-center justify-between">
           <AnimationOnScroll animateIn='animate__fadeInLeft' className="About-Gym-Image flex w-1/2 flex-col p-8">
-            <img src={Squat} alt="Squat" />
+            <img src={Squat} loading="lazy" alt="Squat" />
             <h1 className="font-semibold text-xl">My Personal Records</h1>
           <span className="text-gray-600 text-xs">Click on the numbers to view the lift.</span>
           <ul className='flex flex-row w-full text-2xl py-4'>
@@ -123,27 +122,27 @@ export const About = () => {
               <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
                 <div className='flex flex-col items-center justify-center'>
                   <h2 className="text-5xl font-bold text-gray-800 p-4">Jasper</h2>
-                  <img src={Jasper} alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-xl shadow-orange-300" /> 
+                  <img src={Jasper} loading="lazy" alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-xl shadow-orange-300" /> 
                 </div>
               </AnimationOnScroll>
 
               <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
                 <div className='flex flex-col items-center justify-center'>
                   <h2 className="text-5xl font-bold text-gray-800 p-4">Ginger</h2>
-                  <img src={Ginger} alt="Ginger" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-purple-300" /> 
+                  <img src={Ginger} alt="Ginger" loading="lazy" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-purple-300" /> 
                 </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
               <div className='flex flex-col items-center justify-center'>
                 <h2 className="text-5xl font-bold text-gray-800 p-4">Jullian</h2>
-                <img src={Jullian} alt="Jullian" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-gray-400" />  
+                <img src={Jullian} alt="Jullian" loading="lazy" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-gray-400" />  
               </div>
             </AnimationOnScroll>
 
             <AnimationOnScroll animateIn='animate__rotateIn' animateOut='animate__zoomOut'>
               <div className='flex flex-col items-center justify-center'>
                   <h2 className="text-5xl font-bold text-gray-800 p-4">Watson</h2>
-                  <img src={Watson} alt="Jasper" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-gray-500" />
+                  <img src={Watson} alt="Jasper" loading="lazy" className="rounded-full w-40 h-40 object-cover border-2 border-white shadow-lg shadow-gray-500" />
               </div>
           </AnimationOnScroll>
         </div>
