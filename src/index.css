@@ -210,7 +210,30 @@ body {
     width: 100%;
   }
 }
-
+@media screen and (max-width: 1200px) {
+  .About-Intro {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .Img-Container {
+    width: 100%;
+    height: 40vh;
+  }
+  .Img-Container img {
+    width: 30%;
+  }
+  .Intro-Text-Container {
+    width: 100%;
+  }
+  .Intro-Text-Container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .About-Intro-Detail {
+    padding: 1rem 0rem;
+  }
+}
 /* ABOUT ENDS */
 
 /* MEDIA QUERIES */
