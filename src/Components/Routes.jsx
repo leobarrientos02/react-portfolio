@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 //Component
 import { Home } from './Home';
 import { Project } from './Project';
@@ -21,6 +21,7 @@ export const Routes = () => {
                 <Route exact path="/contact">
                     <Contact />
                 </Route>
+                <Redirect to='/' />
             </Switch>
         </div>
     )
