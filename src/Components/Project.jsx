@@ -32,8 +32,8 @@ export const Project = () => {
                 {project.description}
               </p>
               <div className='flex items-center justify-between'>
-                <p className="text-xl font-bold text-blue-900">{project.tech}</p>
-                <a href={project.github} target="_blank" rel="noreferrer" className='flex py-2 items-center text-blue-900 hover:underline'>
+                <p className="Project-Link text-xl font-bold text-blue-900">{project.tech}</p>
+                <a href={project.github} target="_blank" rel="noreferrer" className='Project-Link flex py-2 items-center text-blue-900 hover:underline'>
                   <FaGithubSquare className='text-lg' /> Github Repository
                 </a>
               </div>
