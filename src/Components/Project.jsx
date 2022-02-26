@@ -14,7 +14,7 @@ export const Project = () => {
 
   useEffect(() => {
     fetchProject();
-  });
+  },[]);
 
   const fetchProject = () =>{
     let projects = [];
