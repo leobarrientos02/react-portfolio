@@ -11,7 +11,7 @@ function Filter({ Projects, setFiltered, activeType, setActiveType }){
             project.tech.includes(activeType)
         );
         setFiltered(filtered);
-    }, [activeType]);
+    }, [activeType, Projects, setFiltered]);
     return(
         <div className="filter-container">
             <button
