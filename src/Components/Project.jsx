@@ -4,12 +4,13 @@ import {projectData} from '../Projects/index';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import Filter from './Filter';
-
+import Loading from './Loading';
 export const Project = () => {
 
   const [Projects, setProjects] = useState([]);
   const [Filtered, setFiltered] = useState([]);
   const [activeType, setActiveType] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetchProject();
@@ -20,12 +21,16 @@ export const Project = () => {
     projects = [...projectData];
     setProjects(projects);
     setFiltered(projects);
+    setIsLoading(false);
   }
 
   return (
     <div className='projects-page'>
       <h1 className='text-center w-full text-4xl font-bold text-gray-900'>My Projects Section</h1>
       <Filter Projects={Projects} setFiltered={setFiltered} setActiveType={setActiveType} activeType={activeType} />
+      {isLoading && (
+        <Loading />
+      )}
       {activeType === "React" &&(
         <div className="filterType">
           React

@@ -24,7 +24,7 @@ export const Home = () => {
     show: {
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1,
       }
     }
   };
