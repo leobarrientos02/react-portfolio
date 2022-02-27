@@ -190,7 +190,7 @@ body {
     height: 40vh;
   }
   .Img-Container img {
-    width: 50%;
+    width: 40%;
   }
   .Intro-Text-Container {
     width: 100%;
@@ -273,7 +273,7 @@ body {
     height: 40vh;
   }
   .Img-Container img {
-    width: 60%;
+    width: 30%;
   }
   .Intro-Text-Container {
     width: 100%;
@@ -294,7 +294,7 @@ body {
   }
   .Img-Container {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
   }
   .Img-Container img {
     width: 20%;
@@ -314,10 +314,67 @@ body {
   .About-Software {
     height: fit-content;
   }
+  .contact {
+    padding-top: 2rem;
+    height: fit-content;
+  }
 }
 /* ABOUT ENDS */
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .header {
+    width: 80%;
+  }
+  .svgMan {
+    display: none;
+  }
+  .splash {
+    display: none;
+  }
+  .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 0rem;
+  }
+  .homeText {
+    width: 100%;
+  }
+  .home-intro-title {
+    font-size: 5rem;
+    width: 100%;
+    padding: 0.5rem 0rem;
+  }
+  .home-subtitile {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .CodeCircles {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .logo-div {
+    width: 100%;
+    text-align: center;
+  }
+  .Logo {
+    box-shadow: none;
+    color: black;
+  }
+
+  .project {
+    flex: 1 1 22rem;
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 754px) {
   .header {
     display: flex;
@@ -410,7 +467,7 @@ body {
   /*Contact*/
   .contact {
     padding-top: 2rem;
-    height: 105vh;
+    height: 100vh;
   }
   .Box-Div {
     display: flex;
@@ -428,55 +485,5 @@ body {
   textarea {
     width: 90%;
     height: 20vh;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .svgMan {
-    display: none;
-  }
-  .splash {
-    display: none;
-  }
-  .Home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-    padding: 4rem 0rem;
-  }
-  .homeText {
-    width: 100%;
-  }
-  .home-intro-title {
-    font-size: 3rem;
-    width: 100%;
-    padding: 0.5rem 0rem;
-  }
-  .home-subtitile {
-    font-size: 2rem;
-    width: 100%;
-  }
-  .CodeCircles {
-    padding: 1rem 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-  }
-  .logo-div {
-    width: 100%;
-    text-align: center;
-  }
-  .Logo {
-    box-shadow: none;
-    color: black;
-  }
-
-  .project {
-    flex: 1 1 22rem;
-    margin: 1rem 0rem;
-    width: 100%;
   }
 }
