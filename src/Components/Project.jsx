@@ -46,6 +46,11 @@ export const Project = () => {
           UX/UI
         </div>
       )}
+      {activeType === "System" &&(
+        <div className="filterType">
+          Full Stack System
+        </div>
+      )}
       {activeType === "" &&(
         <div className="filterType">
           All
@@ -59,7 +64,7 @@ export const Project = () => {
               animate={{opacity: 1}} 
               initial={{opacity: 0}} 
               exit={{opacity: 0}}
-              transition={{duration: 1.3}}  
+              transition={{duration: 0.8}}  
               className='project border border-gray-200 p-2 rounded-xl shadow-xl shadow-blue-200 hover:shadow-blue-300 h-80' 
               key={index}
             >
@@ -77,15 +82,14 @@ export const Project = () => {
                     <FaGithubSquare className='text-lg' /> Github Repository
                   </a>
                 </div>
-              </div>  
+              </div>
             </motion.div>
           ))}
         </AnimatePresence>
       </motion.div>
       <div className="w-full flex items-center justify-center">
         <span className="checkGithub text-gray-600">Check out more projects on my <a className="text-blue-800 hover:underline" href="https://github.com/leobarrientos02/" target="_blank" rel="noreferrer">Github</a></span>
-      </div>
-      
+      </div>      
     </div>
   )
 }

@@ -30,6 +30,11 @@ function Filter({ Projects, setFiltered, activeType, setActiveType }){
                 UX/UI
             </button>
             <button
+                onClick={()=> setActiveType("System")}
+            >
+                System
+            </button>
+            <button
                 onClick={()=> setActiveType("")}
             >
                 All

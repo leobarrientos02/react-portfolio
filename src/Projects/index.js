@@ -49,6 +49,16 @@ export const projectData = [
     tech: "React",
   },
   {
+    name: "EZWork",
+    image: EZWork,
+    link: "https://ez-work.herokuapp.com/index",
+    github: "https://github.com/EzworkSeniorProject/EzWork",
+    technology: ["HTML", "SASS", "JavaScript", "PHP"],
+    description:
+      "Senior Project developed for a college course, my partner handled the back-end & I handled the front-end.",
+    tech: "System",
+  },
+  {
     name: "Cryptoverse",
     image: Cryptoverse,
     link: "https://cryptocurrencyworldapp.netlify.app/",
@@ -77,16 +87,6 @@ export const projectData = [
     description:
       "Website design for a travel agency, to help attract customers to book vacation plans with the company.",
     tech: "UX/UI",
-  },
-  {
-    name: "EZWork",
-    image: EZWork,
-    link: "https://ez-work.herokuapp.com/index",
-    github: "https://github.com/EzworkSeniorProject/EzWork",
-    technology: ["HTML", "SASS", "JavaScript", "PHP"],
-    description:
-      "Senior Project developed for a college course, partner handled the back-end & i did the front-end.",
-    tech: "System",
   },
   {
     name: "Capture",
