@@ -16,6 +16,7 @@ import Cryptoverse from "../img/Cryptoverse.png";
 import GoogLeo from "../img/GoogLeo.png";
 import RealEstate from "../img/RealEstate.png";
 import EZWork from "../img/ezwork.png";
+import Memories from "../img/Memories.png";
 
 export const projectData = [
   {
@@ -79,6 +80,16 @@ export const projectData = [
     tech: "React",
   },
   {
+    name: "Memories",
+    image: Memories,
+    link: "https://react-mymemories-app.netlify.app",
+    github: "https://github.com/leobarrientos02/Memories-Front-End",
+    technology: ["React", "MongoDb", "Express", "Node.js", "Redux"],
+    description:
+      "MERN Stack app, this app allows users to share their memories with other users and see what other users shares.",
+    tech: "System",
+  },
+  {
     name: "Travelly",
     image: Travelly,
     link: "https://adoring-bell-b485f5.netlify.app/",
@@ -116,7 +127,7 @@ export const projectData = [
     technology: ["HTML", "SASS", "JavaScript", "GSAP"],
     description:
       "Making a website that uses many transitions such as page transitions, scroll triggers, & more.",
-    tech: "UX/UI",
+    tech: "Javascript",
   },
   {
     name: "Moda",
