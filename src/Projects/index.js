@@ -17,6 +17,7 @@ import GoogLeo from "../img/GoogLeo.png";
 import RealEstate from "../img/RealEstate.png";
 import EZWork from "../img/ezwork.png";
 import Memories from "../img/Memories.png";
+import DeliciousRecipe from "../img/Delicious.png";
 
 export const projectData = [
   {
@@ -88,6 +89,16 @@ export const projectData = [
     description:
       "MERN Stack app, this app allows users to share their memories with other users and see what other users shares.",
     tech: "System",
+  },
+  {
+    name: "Deliciousss Recipe",
+    image: DeliciousRecipe,
+    link: "https://deliciousss-recipes.netlify.app/",
+    github: "https://github.com/leobarrientos02/react-recipe",
+    technology: ["React", "Axios", "Framer Motion"],
+    description:
+      "A website that use an API to fetch recipes, with features such as search recipes and filter through category.",
+    tech: "React",
   },
   {
     name: "Travelly",
