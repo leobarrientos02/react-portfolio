@@ -60,11 +60,11 @@ export const Project = () => {
         <AnimatePresence>
           {Filtered.map((project, index) => (
             <motion.div 
-              layout 
+              // layout 
               animate={{opacity: 1}} 
               initial={{opacity: 0}} 
               exit={{opacity: 0}}
-              transition={{duration: 0.8}}  
+              transition={{duration: 0.5}}  
               className='project border border-gray-200 p-2 rounded-xl shadow-xl shadow-blue-200 hover:shadow-blue-300 h-80' 
               key={index}
             >

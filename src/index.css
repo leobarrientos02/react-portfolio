@@ -16,6 +16,8 @@ body {
 
 .footer {
   background-color: #154353;
+  position: relative;
+  bottom: 0;
 }
 
 /* HOME PAGE */
