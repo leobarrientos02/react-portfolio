@@ -28,6 +28,9 @@ export const Header = () => {
                     Contact
                 </NavLink>
             </li>
+            <li>
+                <a href='https://drive.google.com/file/d/1NyEtEvqtLdSEzkVWXdwXCf2bBzpcckZo/view?usp=sharing' target="_blank" rel="noreferrer">Resume</a>
+            </li>
         </ul>
     </div>
   )
