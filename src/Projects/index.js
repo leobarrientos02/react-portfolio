@@ -18,6 +18,7 @@ import RealEstate from "../img/RealEstate.png";
 import EZWork from "../img/ezwork.png";
 import Memories from "../img/Memories.png";
 import DeliciousRecipe from "../img/Delicious.png";
+import Connect4 from "../img/connect4.png";
 
 export const projectData = [
   {
@@ -158,6 +159,16 @@ export const projectData = [
     technology: ["HTML", "CSS", "JavaScript"],
     description:
       "Photon allows users to search the Pexel API for any images they want.",
+    tech: "Javascript",
+  },
+  {
+    name: "Connect Four",
+    image: Connect4,
+    link: "https://singleplayer-connect-4.netlify.app/",
+    github: "https://github.com/leobarrientos02/connect-4",
+    technology: ["HTML", "CSS", "JavaScript"],
+    description:
+      "Connect Four is a website develope for users to play connect-four online against a mid-difficult AI.",
     tech: "Javascript",
   },
   {
