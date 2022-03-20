@@ -404,7 +404,7 @@ body {
 
   /*Home */
   .Home {
-    height: fit-content;
+    height: 100vh;
     padding: 0;
     display: flex;
     width: 100%;
@@ -416,12 +416,17 @@ body {
   }
   .home-intro-title {
     width: 100%;
-    font-size: 1rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .home-subtitile {
+    margin: 0.5rem 0rem;
   }
   .CodeCircles {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
+    margin: 1rem 0rem;
   }
   .Man-SVG {
     display: none;
