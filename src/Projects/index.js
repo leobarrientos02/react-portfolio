@@ -19,6 +19,7 @@ import EZWork from "../img/ezwork.png";
 import Memories from "../img/Memories.png";
 import DeliciousRecipe from "../img/Delicious.png";
 import Connect4 from "../img/connect4.png";
+import LockerRoomTalk from "../img/LockerRoomTalk.png";
 
 export const projectData = [
   {
@@ -59,6 +60,16 @@ export const projectData = [
     technology: ["HTML", "SASS", "JavaScript", "PHP"],
     description:
       "Senior Project developed for a college course, my partner handled the back-end & I handled the front-end.",
+    tech: "System",
+  },
+  {
+    name: "Locker Room Talk",
+    image: LockerRoomTalk,
+    link: "https://locker-room-talk.netlify.app/",
+    github: "https://github.com/leobarrientos02/Locker_Room_Talk",
+    technology: ["React", "Express", "Socket.io"],
+    description:
+      "WebApp that allows you to make private rooms and share the link to your friends to chat in real time.",
     tech: "System",
   },
   {
