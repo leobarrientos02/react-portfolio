@@ -24,6 +24,7 @@ import LockerRoomTalk from "../img/LockerRoomTalk.png";
 export const projectData = [
   {
     name: "Travel Adivisor",
+    id: 0,
     image: TravelAdvisor,
     link: "https://traveladvisorlb.netlify.app/",
     github: "https://github.com/leobarrientos02/travel_advisor",
@@ -34,6 +35,7 @@ export const projectData = [
   },
   {
     name: "Real Estate App",
+    id: 1,
     image: RealEstate,
     link: "https://react-real-estate-lyart.vercel.app/",
     github: "https://github.com/leobarrientos02/react-real-estate",
@@ -44,6 +46,7 @@ export const projectData = [
   },
   {
     name: "Inferno Gaming",
+    id: 2,
     image: Inferno,
     link: "https://inferno-gaming.netlify.app/",
     github: "https://github.com/leobarrientos02/React-Gaming",
@@ -54,6 +57,7 @@ export const projectData = [
   },
   {
     name: "EZWork",
+    id: 3,
     image: EZWork,
     link: "https://ez-work.herokuapp.com/index",
     github: "https://github.com/EzworkSeniorProject/EzWork",
@@ -64,6 +68,7 @@ export const projectData = [
   },
   {
     name: "Locker Room Talk",
+    id: 4,
     image: LockerRoomTalk,
     link: "https://locker-room-talk.netlify.app/",
     github: "https://github.com/leobarrientos02/Locker_Room_Talk",
@@ -74,6 +79,7 @@ export const projectData = [
   },
   {
     name: "Cryptoverse",
+    id: 5,
     image: Cryptoverse,
     link: "https://cryptocurrencyworldapp.netlify.app/",
     github: "https://github.com/leobarrientos02/cryptoapp",
@@ -84,6 +90,7 @@ export const projectData = [
   },
   {
     name: "GoogLeo",
+    id: 6,
     image: GoogLeo,
     link: "https://googleo.netlify.app/search",
     github: "https://github.com/leobarrientos02/googleo",
@@ -94,6 +101,7 @@ export const projectData = [
   },
   {
     name: "Memories",
+    id: 7,
     image: Memories,
     link: "https://react-mymemories-app.netlify.app",
     github: "https://github.com/leobarrientos02/Memories-Front-End",
@@ -104,6 +112,7 @@ export const projectData = [
   },
   {
     name: "Deliciousss Recipe",
+    id: 8,
     image: DeliciousRecipe,
     link: "https://deliciousss-recipes.netlify.app/",
     github: "https://github.com/leobarrientos02/react-recipe",
@@ -114,6 +123,7 @@ export const projectData = [
   },
   {
     name: "Travelly",
+    id: 9,
     image: Travelly,
     link: "https://adoring-bell-b485f5.netlify.app/",
     github: "https://github.com/leobarrientos02/Travelly",
@@ -124,6 +134,7 @@ export const projectData = [
   },
   {
     name: "Capture",
+    id: 10,
     image: Capture,
     link: "https://wizardly-kepler-b13330.netlify.app/",
     github: "https://github.com/leobarrientos02/capture",
@@ -134,6 +145,7 @@ export const projectData = [
   },
   {
     name: "Waves X",
+    id: 11,
     image: Waves,
     link: "https://music-x-waves.netlify.app/",
     github: "https://github.com/leobarrientos02/react-music",
@@ -144,6 +156,7 @@ export const projectData = [
   },
   {
     name: "iPhone13 Replica",
+    id: 12,
     image: Iphone,
     link: "https://iphone13-replica.netlify.app/",
     github: "https://github.com/leobarrientos02/UltimateAnimationPage",
@@ -154,6 +167,7 @@ export const projectData = [
   },
   {
     name: "Moda",
+    id: 13,
     image: Moda,
     link: "https://cool-fashion-webdesign.netlify.app/",
     github: "https://github.com/leobarrientos02/FashionSiteDesign",
@@ -164,6 +178,7 @@ export const projectData = [
   },
   {
     name: "Photon",
+    id: 14,
     image: Photon,
     link: "https://photographer-work.netlify.app/",
     github: "https://github.com/leobarrientos02/Photon",
@@ -174,6 +189,7 @@ export const projectData = [
   },
   {
     name: "Connect Four",
+    id: 15,
     image: Connect4,
     link: "https://singleplayer-connect-4.netlify.app/",
     github: "https://github.com/leobarrientos02/connect-4",
@@ -184,6 +200,7 @@ export const projectData = [
   },
   {
     name: "Elena Gallery",
+    id: 16,
     image: Elena,
     link: "https://focused-archimedes-c341c5.netlify.app/",
     github: "https://github.com/leobarrientos02/Photography_Site",
@@ -194,6 +211,7 @@ export const projectData = [
   },
   {
     name: "ColorApp",
+    id: 17,
     image: ColorApp,
     link: "https://color-chooser-app.netlify.app/",
     github: "https://github.com/leobarrientos02/ColorApp",
@@ -204,6 +222,7 @@ export const projectData = [
   },
   {
     name: "ToDo App",
+    id: 18,
     image: Todo,
     link: "https://affectionate-hamilton-d96896.netlify.app/",
     github: "https://github.com/leobarrientos02/ToDoApp",
@@ -214,6 +233,7 @@ export const projectData = [
   },
   {
     name: "Culture",
+    id: 19,
     image: Culture,
     link: "https://culture-love.netlify.app/",
     github: "https://github.com/leobarrientos02/WebsiteDesign",
@@ -224,6 +244,7 @@ export const projectData = [
   },
   {
     name: "Beats App",
+    id: 20,
     image: Beats,
     link: "https://makeyourownbeat.netlify.app/",
     github: "https://github.com/leobarrientos02/Beat_Maker",
@@ -234,6 +255,7 @@ export const projectData = [
   },
   {
     name: "Calculator",
+    id: 21,
     image: Calc,
     link: "https://epic-mahavira-ca42eb.netlify.app/",
     github: "https://github.com/leobarrientos02/Simple_Calculator",
