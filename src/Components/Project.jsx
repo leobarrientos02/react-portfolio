@@ -9,18 +9,19 @@ import { Error } from "./Error";
 export const Project = () => {
   const [project, setProject] = useState([]);
 
-  useEffect(() => {
-    fetchProject();
-  }, []);
-
   let { projectId } = useParams();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchProject = () => {
     let projects = [];
     projects = [...projectData];
     setProject(projects[projectId]);
     console.log(projects[projectId]);
   };
+
+  useEffect(() => {
+    fetchProject();
+  }, [fetchProject]);
 
   return (
     <>
