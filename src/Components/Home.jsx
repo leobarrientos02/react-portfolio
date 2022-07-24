@@ -1,21 +1,36 @@
-import React from 'react'
-import Splash from '../img/splash.svg';
-import { FaHtml5, FaReact, FaSass, FaGithub, FaPython, FaPhp, FaFigma, FaNodeJs, FaCss3Alt } from 'react-icons/fa';
-import { DiJsBadge, DiJava, DiGit } from "react-icons/di";
-import { motion } from 'framer-motion';
-
+import React from "react";
+import Splash from "../img/splash.svg";
+import {
+  FaHtml5,
+  FaReact,
+  FaSass,
+  FaGithub,
+  FaPython,
+  FaPhp,
+  FaAngular,
+  FaNodeJs,
+  FaCss3Alt,
+  FaAws,
+  FaJenkins,
+  FaJava,
+} from "react-icons/fa";
+import { DiJsBadge, DiGit, DiPostgresql } from "react-icons/di";
+import { motion } from "framer-motion";
 
 export const Home = () => {
-  const codeCircle = {
-    hidden : {
-      x: "-100%",
-    },
-    show : {
-      x: 0,
+  const codeCircles = {
+    hidden: { opacity: 1 },
+    show: {
+      opacity: 1,
       transition: {
-        duration: 1,
-      }
-    }
+        delayChildren: 0.3,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const codeCircle = {
+    hidden: { opacity: 0, rotate: -270 },
+    show: { opacity: 1, rotate: 0, transition: { duration: 0.5 } },
   };
   const nameReveal = {
     hidden: {
@@ -25,35 +40,94 @@ export const Home = () => {
       opacity: 1,
       transition: {
         duration: 1,
-      }
-    }
+      },
+    },
   };
 
   return (
     <div className="Home w-full pt-8 flex flex-row">
-      <img src={Splash} alt="Splash" className='splash' />
+      <img src={Splash} alt="Splash" className="splash" />
       <div className="homeText w-1/2 h-full flex flex-col items-center">
-        <motion.h2 
-          className='home-intro-title'
-          variants={ nameReveal } initial='hidden' animate='show'
+        <motion.h2
+          className="home-intro-title"
+          variants={nameReveal}
+          initial="hidden"
+          animate="show"
         >
           Leonel E. Barrientos
         </motion.h2>
-        <p className="home-subtitile text-gray-800 text-4xl">Full Stack Developer</p>
-        <p className="home-subtitile text-gray-600 text-2xl text-center">Skills in using popular technologies used to create amazing apps.</p>
-        <motion.div variants={ codeCircle } initial='hidden' animate='show' className='CodeCircles flex flex-wrap flex-row justify-around w-3/4 text-4xl'>
-              <FaHtml5 className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-orange-200 text-6xl text-orange-600" />
-              <FaCss3Alt className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-200 text-6xl text-blue-600"/>
-              <FaReact className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-700" />
-              <FaSass className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-pink-300 text-6xl text-pink-700"/>
-              <FaGithub className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-purple-300 text-6xl text-purple-700"/>
-              <DiJava className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-500" />
-              <FaPython className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-yellow-300 text-6xl text-yellow-500" />
-              <FaPhp className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-800"/>
-              <DiGit className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-orange-300 text-6xl text-orange-600" />
-              <FaFigma className="bg-gray-200 p-4 m-2  rounded-full shadow-lg shadow-red-300 text-6xl text-red-500"/>
-              <FaNodeJs className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-green-300 text-6xl text-green-800"/>
-              <DiJsBadge className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-yellow-300 text-6xl text-yellow-400" />
+        <p className="home-subtitile text-gray-800 text-4xl">
+          Full Stack Developer
+        </p>
+        <p className="home-subtitile text-gray-600 text-2xl text-center">
+          Developing creative and modern web applications using the hottest
+          technologies.
+        </p>
+        <motion.div
+          variants={codeCircles}
+          initial="hidden"
+          animate="show"
+          className="CodeCircles flex flex-wrap flex-row justify-evenly"
+        >
+          <motion.div variants={codeCircle} title="React">
+            <FaReact className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-700" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Angular">
+            <FaAngular className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-red-300 text-6xl text-red-700" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="HTML5">
+            <FaHtml5 className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-orange-200 text-6xl text-orange-600" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Css3">
+            <FaCss3Alt className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-200 text-6xl text-blue-600" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Java">
+            <FaJava className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-500" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="JavaScript">
+            <DiJsBadge className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-yellow-300 text-6xl text-yellow-400" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="PHP">
+            <FaPhp className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-800" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="AWS">
+            <FaAws className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-orange-300 text-6xl text-orange-700" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Github">
+            <FaGithub className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-purple-300 text-6xl text-purple-700" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Git">
+            <DiGit className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-orange-300 text-6xl text-orange-600" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Angular">
+            <FaJenkins className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-700" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="Python">
+            <FaPython className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-yellow-300 text-6xl text-yellow-500" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="SASS">
+            <FaSass className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-pink-300 text-6xl text-pink-700" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="NodeJS">
+            <FaNodeJs className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-green-300 text-6xl text-green-800" />
+          </motion.div>
+
+          <motion.div variants={codeCircle} title="PostgreSQL">
+            <DiPostgresql className="bg-gray-200 p-4 m-2 rounded-full shadow-lg shadow-blue-300 text-6xl text-blue-800" />
+          </motion.div>
         </motion.div>
       </div>
       <div className="w-1/2 flex items-center justify-center">
@@ -264,5 +338,5 @@ export const Home = () => {
         </svg>
       </div>
     </div>
-  )
-}
+  );
+};

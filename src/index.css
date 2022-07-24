@@ -175,7 +175,7 @@ body {
 }
 /* About */
 .About-Intro {
-  height: 85vh;
+  height: 90vh;
 }
 .About-Pets {
   height: 100vh;
@@ -376,6 +376,7 @@ body {
     flex-wrap: wrap;
     width: 80%;
   }
+
   .logo-div {
     width: 100%;
     text-align: center;
