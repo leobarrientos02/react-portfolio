@@ -20,6 +20,7 @@ import Memories from "../img/Memories.png";
 import DeliciousRecipe from "../img/Delicious.png";
 import Connect4 from "../img/connect4.png";
 import LockerRoomTalk from "../img/LockerRoomTalk.png";
+import AnimationSite from "../img/AnimationSite.png"
 
 export const projectData = [
   {
@@ -262,6 +263,17 @@ export const projectData = [
     technology: ["HTML", "CSS", "JavaScript"],
     description:
       "A simple calculator that allows users to do math calculations. Includes Math Laws.",
+    tech: "Javascript",
+  },
+  {
+    name: "Animation Site",
+    id: 22,
+    image: AnimationSite,
+    link: "https://lucky-beignet-dc8f36.netlify.app/",
+    github: "https://github.com/leobarrientos02/AnimationWebsite",
+    technology: ["HTML", "CSS", "JavaScript"],
+    description:
+      "Fun Animation Site using Css, Javascript, and HTML with fun user interactions.",
     tech: "Javascript",
   },
 ];
