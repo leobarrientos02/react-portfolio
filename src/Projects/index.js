@@ -21,6 +21,7 @@ import DeliciousRecipe from "../img/Delicious.png";
 import Connect4 from "../img/connect4.png";
 import LockerRoomTalk from "../img/LockerRoomTalk.png";
 import AnimationSite from "../img/AnimationSite.png"
+import TMDB from "../img/TMDB.png"
 
 export const projectData = [
   {
@@ -275,5 +276,16 @@ export const projectData = [
     description:
       "Fun Animation Site using Css, Javascript, and HTML with fun user interactions.",
     tech: "Javascript",
+  },
+  {
+    name: "Entertainment Universe",
+    id: 23,
+    image: TMDB,
+    link: "https://entertainment-universe.netlify.app/",
+    github: "https://github.com/leobarrientos02/tmdb-app",
+    technology: ["HTML", "CSS", "JavaScript", "React", "TMDB API"],
+    description:
+      "ReactJs Application that uses TMDB API to display movies, shows, and people.",
+    tech: "React",
   },
 ];
